@@ -22,3 +22,9 @@ To_do;
 -actually correct ft_mapi, it doesn't work ;-; it's the "void" type, I don't mean norhing but wathever. it'as annoying
 
 -Coorect ft_split, it need to have a \0 at the end of each str wich he don't have
+
+-Make all the void function into int return to make test. And secure each case (if the args used are incorecte)
+
+-Differenciate differente part of the lib to make litles ones. And then a big one :
+	->like having libft_str and libft_lst and libft_memory and merge the 3 in a libft
+	->So having 3 makes different. make str, make lst, and make meme.
