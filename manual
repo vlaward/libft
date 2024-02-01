@@ -28,3 +28,5 @@ To_do;
 -Differenciate differente part of the lib to make litles ones. And then a big one :
 	->like having libft_str and libft_lst and libft_memory and merge the 3 in a libft
 	->So having 3 makes different. make str, make lst, and make meme.
+
+"THIS IS JUSTE A TEST FOR THE GIT SUBTREE"
