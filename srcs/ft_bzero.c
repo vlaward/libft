@@ -6,17 +6,20 @@
 /*   By: ncrombez <ncrombez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 13:19:53 by ncrombez          #+#    #+#             */
-/*   Updated: 2023/05/09 15:56:57 by ncrombez         ###   ########.fr       */
+/*   Updated: 2024/02/06 17:11:37 by ncrombez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_bzero(void *s, size_t n)
+int	ft_bzero(void *s, size_t n)
 {
+	if (!s)
+		return (0);
 	while (n > 0)
 	{
 		*(char *)s++ = '\0';
 		n--;
 	}
+	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: ncrombez <ncrombez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:07:34 by ncrombez          #+#    #+#             */
-/*   Updated: 2024/01/17 16:41:07 by ncrombez         ###   ########.fr       */
+/*   Updated: 2024/02/06 17:15:00 by ncrombez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_length(int *tabl)
 {
+	if (!tabl)
+		return (0);
 	return ((int)(sizeof(tabl) / sizeof(int)));
 }

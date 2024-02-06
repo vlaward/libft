@@ -6,7 +6,7 @@
 /*   By: ncrombez <ncrombez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 16:50:30 by ncrombez          #+#    #+#             */
-/*   Updated: 2024/01/29 19:48:28 by ncrombez         ###   ########.fr       */
+/*   Updated: 2024/02/06 17:20:55 by ncrombez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char		*ft_strdup(const char *src);
 char		*ft_itoa(int n);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		**ft_split(const char *str, char sep);
-void		ft_bzero(void *s, size_t n);
+int			ft_bzero(void *s, size_t n);
 void		ft_putechar_fd(char c, int fb);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putenbr_fd(int nb, int fd);
@@ -65,7 +65,7 @@ t_list		*ft_lstblast(t_list *lst);
 int			ft_lstadd_back(t_list **lst, t_list *new);
 void		ft_lstdelone(t_list *lst, void (*del)(void *));
 void		ft_lstclear(t_list **lst, void (*del)(void *));
-void		ft_lstiter(t_list *lst, void (*f)(void *));
+int			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list		*ft_lstante(t_list **lst, t_list *node);
 t_list		*ft_lstnodi(t_list **list, int index);

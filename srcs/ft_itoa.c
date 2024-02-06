@@ -6,7 +6,7 @@
 /*   By: ncrombez <ncrombez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 08:32:10 by ncrombez          #+#    #+#             */
-/*   Updated: 2024/01/18 14:21:03 by ncrombez         ###   ########.fr       */
+/*   Updated: 2024/02/06 17:20:14 by ncrombez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char	*ft_itoa_base(int n, char *charset)
 	int		size;
 	char	*ret;
 
+	if (!charset)
+		return (NULL);
 	size = ft_strlen(charset);
 	dyxit = 1;
 	alloc = 2;
