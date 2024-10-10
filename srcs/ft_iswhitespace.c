@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putestr_fd.c                                    :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncrombez <ncrombez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 09:39:07 by ncrombez          #+#    #+#             */
-/*   Updated: 2024/10/10 15:08:44 by ncrombez         ###   ########.fr       */
+/*   Created: 2024/06/20 06:49:51 by ncrombez          #+#    #+#             */
+/*   Updated: 2024/10/10 16:08:17 by ncrombez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <unistd.h>
 
-int	ft_putestr_fd(char *s, int fd)
+int	ft_iswhitespace(char c)
 {
-	if (s != NULL)
-		return (write(fd, s, ft_strlen(s)));
+	if (!c)
+		return (0);
+	if ((c <= 13 && c >= 9) || c == 32)
+		return (1);
 	return (0);
 }
